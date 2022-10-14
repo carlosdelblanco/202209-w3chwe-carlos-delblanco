@@ -23,7 +23,7 @@ module.exports = {
     sourceType: "module",
   },
   rules: {
-    "lines-between-class-members": [
+    "no-unused-vars": [
       "error",
       {
         vars: "all",
