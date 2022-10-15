@@ -1,4 +1,5 @@
-import type { Pokemon, PokemonList } from "./components/types.js";
+import Header from "./components/Header/Header.js";
+import type { Pokemon } from "./components/types.js";
 
 const apiUrl = "https://pokeapi.co/api/v2/pokemon/";
 
@@ -16,3 +17,8 @@ const fetchPokemon = async (number: number) => {
 };
 
 console.log(fetchPokemon(5));
+
+const screen = document.querySelector(".root");
+
+const header = new Header(screen as HTMLElement);
+header.render();
