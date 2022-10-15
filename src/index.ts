@@ -16,8 +16,6 @@ const fetchPokemon = async (number: number) => {
   return { name, artwork };
 };
 
-console.log(fetchPokemon(5));
-
 const screen = document.querySelector(".root");
 
 const header = new Header(screen as HTMLElement);
